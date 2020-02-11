@@ -21,19 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         when(number){
             0 -> {
-                cpuText.text = "相手の手はグーです"
+                imageView.setImageResource(R.drawable.guu)
                 resultText.text = "引き分けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
             }
 
             1 ->{
-                cpuText.text = "相手の手はちょきです"
+                imageView.setImageResource(R.drawable.cyoki)
                 resultText.text = "あなたの勝ちです"
                 resultText.setTextColor(Color.rgb(250,0,100))
             }
 
             2 ->{
-                cpuText.text = "相手の手はパーです"
+                imageView.setImageResource(R.drawable.paa)
                 resultText.text = "あなたの負けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
 
@@ -47,17 +47,17 @@ class MainActivity : AppCompatActivity() {
 
         when(number){
             0 -> {
-                cpuText.text = "相手の手はグーです"
+                imageView.setImageResource(R.drawable.guu)
                 resultText.text = "あなたの負けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
             }
             1 ->{
-                cpuText.text = "相手の手はちょきです"
+                imageView.setImageResource(R.drawable.cyoki)
                 resultText.text = "引き分けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
             }
             2 ->{
-                cpuText.text = "相手の手はパーです"
+                imageView.setImageResource(R.drawable.paa)
                 resultText.text = "あなたの勝ちです"
                 resultText.setTextColor(Color.rgb(250,0,100))
             }
@@ -70,17 +70,17 @@ class MainActivity : AppCompatActivity() {
         var number = Random.nextInt(3)
         when(number){
             0 -> {
-                cpuText.text = "相手の手はグーです"
+                imageView.setImageResource(R.drawable.guu)
                 resultText.text = "あなたの勝ちです"
                 resultText.setTextColor(Color.rgb(250,0,100))
             }
             1 ->{
-                cpuText.text = "相手の手はちょきです"
+                imageView.setImageResource(R.drawable.cyoki)
                 resultText.text = "あなたの負けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
             }
             2 ->{
-                cpuText.text = "相手の手はパーです"
+                imageView.setImageResource(R.drawable.paa)
                 resultText.text = "引き分けです"
                 resultText.setTextColor(Color.rgb(0,0,0))
             }
